@@ -6,6 +6,46 @@
     <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="DBRepository" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DBRepository.csproj" t="IncludeRecursive" />
+        <e p="Interfaces" t="Include">
+          <e p="IBlogRepository.cs" t="Include" />
+          <e p="IRepositoryContextFactory.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20191027113557_InitialMigration.cs" t="Include" />
+          <e p="20191027113557_InitialMigration.Designer.cs" t="Include" />
+          <e p="20191027114147_Init.cs" t="Include" />
+          <e p="20191027114147_Init.Designer.cs" t="Include" />
+          <e p="RepositoryContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="DBRepository.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="BaseRepository.cs" t="Include" />
+          <e p="BlogRepository.cs" t="Include" />
+        </e>
+        <e p="RepositoryContext.cs" t="Include" />
+        <e p="RepositoryContextFactory.cs" t="Include" />
+      </e>
+      <e p="Models" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Models.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="Models.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="User.cs" t="Include" />
+      </e>
       <e p="mtSolution" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
@@ -65,8 +105,10 @@
           </e>
         </e>
         <e p="Controllers" t="Include">
+          <e p="BlogController.cs" t="Include" />
           <e p="SampleDataController.cs" t="Include" />
         </e>
+        <e p="DesignTimeDbContextFactory.cs" t="Include" />
         <e p="mtSolution.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
